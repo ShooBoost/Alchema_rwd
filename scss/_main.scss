@@ -1,0 +1,41 @@
+// 調整 slide image 大小
+.carousel-inner {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+
+    // RWD when Pad Size
+    @include pad{
+        height: 500px;
+        min-height: 500px;
+    }
+}
+
+.carousel-item {
+    // 繼承父 .carousel-inner 的寬高大小
+    width: 100%;
+    height: 100%;
+
+    img {
+        // 繼承父 .carousel-item 的寬高大小
+        width: 100%;
+        height: 100%;
+
+        // 比例不變的去填滿自己的大小
+        object-fit: cover;
+        
+        
+      }
+
+};
+
+.navbar-collapse {
+    
+};
+
+
+.carousel-caption {
+    p {
+        font: italic bold 12px/30px Georgia, serif;
+    };
+};
